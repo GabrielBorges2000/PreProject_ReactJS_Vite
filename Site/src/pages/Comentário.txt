@@ -1,0 +1,9 @@
+Aqui em pages eu coloco todas as minhas páginas
+ou rotas que o meu projeto irá ter.
+
+De prefência procurar colocar sempre uma pasta
+nova para cada rota que for utilizada para fácilitar
+o manejo, cada uma delas contendo um arquivo index.tsx e style.ts.
+
+não esquecer de exportar o styled-components para cada um dos styles.ts
+

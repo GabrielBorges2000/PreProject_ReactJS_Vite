@@ -1,0 +1,117 @@
+
+-------------------------------------------------------------------------------
+                            # Download #
+Esses são os comandos que eu mais utilizarei ao começar um projeto.
+Não esquecer de colocalos, aqui terá extenções, bibliotecas e plug-ins
+ necessáriosnas minhas aplicações com essa pasta base que eu estou criando.
+
+npm i
+npm run dev (Código para inciar o servidor)
+npm i styled-components
+npm i @types/styled-components -D
+npm i typescript -D
+npm i react-router-dom
+npm i react-hook-form =>(Aqui eu irei precisar de uma biblioteca de validação)
+
+caso eu tenha duvida do que eu já instalei, basta olhar o arquivo package.json.
+
+-------------------------------------------------------------------------------
+                          # Importação #
+# Sempre lembrar de realizar o import da const, function, interface,
+da extenção do react ou biblioteca que eu estiver utilizando.
+Mas para facilitar a importação dvemos colocar o export na frente da const,
+function, interface nomear ela como eu quero e em seguida está pronta para
+utilizar no meu projeto.
+
+exemplo:
+
+import { NomeDaFunção } from "./styles";
+
+export function NomeDaFuncção() {
+  return(
+    <div>
+      <h1>
+        Hello Word
+      </h1>
+    </div>
+  )
+}
+
+-------------------------------------------------------------------------------
+                            # Páginas #
+
+# Cada página deve conter um arquivo index.tsx ou styles.ts,
+sendo index.tsx as configurações da minha página e styles.ts
+sendo as minhas estizações do CSS.
+-------------------------------------------------------------------------------
+                            # Header #
+De prefência sempre coloar a HeaderContainer na página home e no meio
+da HeaderContent como no exemplo abaixo:
+
+Exemplo:
+
+import { Header } from "../../components/Header";
+
+export function Home() {
+  return(
+    <div>
+      <Header />
+    </div>
+  )
+}
+
+
+
+Mas no index.tsx da Header colocar a seguinte referência:
+
+Exemplo:
+
+import { HeaderContainer, HeaderContent } from "./styles";
+
+export function NomeDaFuncção() {
+  return(
+    <div>
+      <HeaderContainer>
+        <HeaderContent>
+          Aqui dentro da Header colocar as configuração da Header.
+        </HeaderContent>
+      </HeaderContainer>
+    </div>
+  )
+}
+
+-------------------------------------------------------------------------------
+                           # @Types / Props #
+
+Essas são as configurações padrões para configurar
+o meu carregamento de temas das PROPS de cores.
+Essas são as cores que eu coloco em defaul.ts.
+caso eu queira criar alguma função eu posso fazer uma nova também,
+porém não posso esquecer de referênciar na pagina App.tsx.
+Além disso não esquecer de relizar a importação.
+
+# Essas configurações devem ser aplicadas em um arquivos styled.s.ts. #
+
+Segue Exemplo:
+
+import 'styled-components';
+import { defaultTheme } from '../styles/theme/default';
+
+type Themetype = typeof defaultTheme
+
+declare module 'styled-components' {
+  export interface DefaultTheme extends Themetype {}
+}
+
+-------------------------------------------------------------------------------
+                               Assets #
+Aqui na Assets deve ser colocada todas as imagens,
+pois séra daqui que iremos puxar todas as imagens
+que iremos necessitar em nosso projeto.
+
+De preferência sempre colocar as imagens em formato SVG,
+para facilitar na hora da utilização do CSS.
+
+para colocar as imagens SVG diretamente do figma, basta criar um arquivo
+nome-da-imagem.svg e ao abrir o arquivo bas apenas colar o código da imagem
+svg que foi escolhida.

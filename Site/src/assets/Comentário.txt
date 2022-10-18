@@ -1,0 +1,10 @@
+Aqui na Assets deve ser colocada todas as imagens,
+pois séra daqui que iremos puxar todas as imagens
+que iremos necessitar em nosso projeto.
+
+De preferência sempre colocar as imagens em formato SVG,
+para facilitar na hora da utilização do CSS.
+
+para colocar as imagens SVG diretamente do figma, basta criar um arquivo
+nome-da-imagem.svg e ao abrir o arquivo bas apenas colar o código da imagem
+svg que foi escolhida.
