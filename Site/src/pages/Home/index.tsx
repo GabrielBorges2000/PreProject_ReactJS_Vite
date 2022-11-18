@@ -2,7 +2,7 @@ import { Header } from "../../components/Header";
 import { HomeContainer } from "./styles";
 
 export function Home() {
-  return(
+  return (
     <HomeContainer>
       <h1>Home</h1>
     </HomeContainer>
