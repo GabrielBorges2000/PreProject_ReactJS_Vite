@@ -5,17 +5,16 @@ export const GlobalStyle = createGlobalStyle`
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border border-box;
+  box-sizing: border-box;
 }
 
 :focus {
   outline: 0;
-  box-shadow: 0 0 0 2px ${props => props.theme['green-500']};
+  box-shadow: 0;
   -webkit-font-smoothing: antialiased;
 }
 
 body, input, textarea, button {
-  background: black;
   font: 400 1rem 'Roboto', sans-serif;
 }
 `;

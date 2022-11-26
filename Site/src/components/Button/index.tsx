@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 
-export function Header() {
+export function Button() {
     return(
         <Container></Container>
     )

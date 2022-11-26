@@ -1,11 +1,9 @@
-import { HistoryContainer, HistoryList } from './styles'
+import { HistoryContainer } from './styles'
 
 export function History() {
   return (
     <HistoryContainer>
-      <HistoryList>
         <h1>History</h1>
-      </HistoryList>
     </HistoryContainer>
   )
 }
